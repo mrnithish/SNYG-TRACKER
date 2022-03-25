@@ -1,0 +1,97 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2021-08-16T10:50:21+0000",
+ "nonVisible": "true",
+ "iconName": "",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "OtpMail",
+   "description": "Method for OtpMail",
+   "params": [
+    {
+     "name": "CompanyName",
+     "type": "text"
+    },
+    {
+     "name": "CompanyMailAddress",
+     "type": "text"
+    },
+    {
+     "name": "To_Mail",
+     "type": "text"
+    },
+    {
+     "name": "Subject",
+     "type": "text"
+    },
+    {
+     "name": "Msg",
+     "type": "text"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "OtpMailPrimium",
+   "description": "Method for OtpMailPrimium",
+   "params": [
+    {
+     "name": "p_Server",
+     "type": "text"
+    },
+    {
+     "name": "p_CompanyName",
+     "type": "text"
+    },
+    {
+     "name": "p_CompanyMailAddress",
+     "type": "text"
+    },
+    {
+     "name": "p_To_Mail",
+     "type": "text"
+    },
+    {
+     "name": "p_Subject",
+     "type": "text"
+    },
+    {
+     "name": "p_Msg",
+     "type": "text"
+    }
+   ],
+   "returnType": "text"
+  }
+ ],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "com.aiamaster.AiaMasterMail",
+ "androidMinSdk": 7,
+ "version": "2",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "AiaMasterMail",
+ "helpString": "Modefy your server for free.HBICLD mail Service",
+ "properties": [],
+ "events": [{
+  "deprecated": "false",
+  "name": "ServerResponse",
+  "description": "Event raised after 'GenerateKeys' method with success and response",
+  "params": [
+   {
+    "name": "successful",
+    "type": "boolean"
+   },
+   {
+    "name": "response",
+    "type": "text"
+   },
+   {
+    "name": "ResellerID",
+    "type": "text"
+   }
+  ]
+ }]
+}]

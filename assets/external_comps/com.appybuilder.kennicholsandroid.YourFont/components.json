@@ -1,0 +1,46 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "http://appyBuilder.com/extensions/icons/extension.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "ResetFont",
+   "description": "Resets Component's Font to default Sans Serif Font",
+   "params": [{
+    "name": "component",
+    "type": "component"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "SetFont",
+   "description": "Sets Component's Font to CustomFont",
+   "params": [{
+    "name": "component",
+    "type": "component"
+   }]
+  }
+ ],
+ "blockProperties": [{
+  "rw": "write-only",
+  "deprecated": "false",
+  "name": "CustomFont",
+  "description": "",
+  "type": "text"
+ }],
+ "helpUrl": "",
+ "type": "com.appybuilder.kennicholsandroid.YourFont.YourFont",
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "YourFont",
+ "helpString": "This Extension was created with the AppyBuilder Code Editor.<br>Create your own here:<br><a href='https://editor.appybuilder.com' target='_blank'>https://editor.appybuilder.com<\/a><br>",
+ "properties": [{
+  "defaultValue": "",
+  "name": "CustomFont",
+  "editorArgs": [],
+  "editorType": "asset"
+ }],
+ "events": []
+}]

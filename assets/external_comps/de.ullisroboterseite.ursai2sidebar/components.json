@@ -1,0 +1,521 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2021-10-05",
+ "nonVisible": "true",
+ "iconName": "aiwebres/icon.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "GetItemChecked",
+   "description": "Gets the checked state of the SideBar. Counting starts with 1.",
+   "params": [{
+    "name": "ItemNo",
+    "type": "number"
+   }],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "HasItemCheckBox",
+   "description": "true, if item has a CheckBox. Counting starts with 1.",
+   "params": [{
+    "name": "ItemNo",
+    "type": "number"
+   }],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "Hide",
+   "description": "Hides the SideBar",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "LoadItemsFromFile",
+   "description": "Loads the menu items from a file.",
+   "params": [{
+    "name": "FileName",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "SetItemChecked",
+   "description": "Sets the checked state of the SideBar item. Counting starts with 1.",
+   "params": [
+    {
+     "name": "ItemNo",
+     "type": "number"
+    },
+    {
+     "name": "Checked",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SetItemEnabled",
+   "description": "Sets enabled state of SideBar item. Counting starts with 1.",
+   "params": [
+    {
+     "name": "ItemNo",
+     "type": "number"
+    },
+    {
+     "name": "Enabled",
+     "type": "boolean"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SetItemIconColor",
+   "description": "Sets the icon color of the SideBar item. Counting starts with 1.",
+   "params": [
+    {
+     "name": "ItemNo",
+     "type": "number"
+    },
+    {
+     "name": "Color",
+     "type": "number"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SetItemIconName",
+   "description": "Sets the icon name of the SideBar item. Counting starts with 1.",
+   "params": [
+    {
+     "name": "ItemNo",
+     "type": "number"
+    },
+    {
+     "name": "Name",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SetItemText",
+   "description": "Sets the text of the SideBar item. Counting starts with 1.",
+   "params": [
+    {
+     "name": "ItemNo",
+     "type": "number"
+    },
+    {
+     "name": "Text",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "SetSideBarItems",
+   "description": "Method for SetSideBarItems",
+   "params": [{
+    "name": "ListItems",
+    "type": "list"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "Show",
+   "description": "Opens the SideBar.",
+   "params": []
+  }
+ ],
+ "blockProperties": [
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "BackgroundColor",
+   "description": "Specifies the SideBars's background color as an alpha-red-green-blue integer.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "Enabled",
+   "description": "Specifies whether the SideBar should be active and clickable.",
+   "type": "boolean"
+  },
+  {
+   "rw": "write-only",
+   "deprecated": "false",
+   "name": "FitImageSize",
+   "description": "Specifies wether the top image is scaled to the SideBar's width.",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "FontSize",
+   "description": "Specifies the font size, measured in sp(scale-independent pixels).",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "IconColor",
+   "description": "Specifies the SideBars's icon color as an alpha-red-green-blue integer.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "Image",
+   "description": "Sets the top image asset file name.",
+   "type": "text"
+  },
+  {
+   "rw": "write-only",
+   "deprecated": "false",
+   "name": "ImageAlignment",
+   "description": "Specifies the alignment of the title image: left, center, right).",
+   "type": "number"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "IsOpened",
+   "description": "Gets wether the SideBar is opened.",
+   "type": "boolean"
+  },
+  {
+   "rw": "invisible",
+   "deprecated": "false",
+   "name": "ItemsFromFile",
+   "description": "Loads the items from a file.",
+   "type": "text"
+  },
+  {
+   "rw": "write-only",
+   "deprecated": "false",
+   "name": "ItemsFromString",
+   "description": "Set the list from a string of comma-separated values.",
+   "type": "text"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "PaddingIcon",
+   "description": "Specifies the padding of the icon to the left border.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "PaddingText",
+   "description": "Specifies the distance between the icon and the text.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SidebarWidthPercentage",
+   "description": "Specifies the width of the sidebar as a percentage of the display width [30..90].",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SwipeDetectorWidth",
+   "description": "Sets the size of the siwpe detector field.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SwitchThumbColorActive",
+   "description": "Specifies the Switch's thumb color when switch is in the On state.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SwitchThumbColorInactive",
+   "description": "Specifies the Switch's thumb color when switch is in the Off state.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SwitchTrackColorActive",
+   "description": "Color of the toggle track when switched on.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "SwitchTrackColorInactive",
+   "description": "Color of the toggle track when switched off.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TextColor",
+   "description": "Specifies the SideBars's text color as an alpha-red-green-blue integer.",
+   "type": "number"
+  },
+  {
+   "rw": "read-write",
+   "deprecated": "false",
+   "name": "TextColorInactive",
+   "description": "Specifies the SideBars's text color as an alpha-red-green-blue integer.",
+   "type": "number"
+  },
+  {
+   "rw": "write-only",
+   "deprecated": "false",
+   "name": "UseSwitches",
+   "description": "Specifies wether the SideBar displays Switches instead of CheckBoxes.",
+   "type": "boolean"
+  },
+  {
+   "rw": "read-only",
+   "deprecated": "false",
+   "name": "Version",
+   "description": "Returns the component's version name.",
+   "type": "text"
+  }
+ ],
+ "helpUrl": "https://UllisRoboterSeite.de/android-AI2-SideBar.html",
+ "licenseName": "",
+ "type": "de.ullisroboterseite.ursai2sidebar.UrsAI2SideBar",
+ "versionName": "1.1.0",
+ "androidMinSdk": 14,
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "assets": ["MaterialIcons-Regular.ttf"],
+ "name": "UrsAI2SideBar",
+ "helpString": "AI2 extension SideBar component.",
+ "properties": [
+  {
+   "defaultValue": "&HFFFFFFFF",
+   "name": "BackgroundColor",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "True",
+   "name": "Enabled",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "True",
+   "name": "FitImageSize",
+   "editorArgs": [],
+   "editorType": "boolean"
+  },
+  {
+   "defaultValue": "16.0",
+   "name": "FontSize",
+   "editorArgs": [],
+   "editorType": "float"
+  },
+  {
+   "defaultValue": "&HFF000000",
+   "name": "IconColor",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "",
+   "name": "Image",
+   "editorArgs": [],
+   "editorType": "asset"
+  },
+  {
+   "defaultValue": "1",
+   "name": "ImageAlignment",
+   "editorArgs": [],
+   "editorType": "horizontal_alignment"
+  },
+  {
+   "defaultValue": "",
+   "name": "ItemsFromFile",
+   "editorArgs": [],
+   "editorType": "asset"
+  },
+  {
+   "defaultValue": "",
+   "name": "ItemsFromString",
+   "editorArgs": [],
+   "editorType": "textArea"
+  },
+  {
+   "defaultValue": "16",
+   "name": "PaddingIcon",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "32",
+   "name": "PaddingText",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "80",
+   "name": "SidebarWidthPercentage",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "24",
+   "name": "SwipeDetectorWidth",
+   "editorArgs": [],
+   "editorType": "non_negative_integer"
+  },
+  {
+   "defaultValue": "&HFFFFFFFF",
+   "name": "SwitchThumbColorActive",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "&HFFCCCCCC",
+   "name": "SwitchThumbColorInactive",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "&HFF00FF00",
+   "name": "SwitchTrackColorActive",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "&HFF444444",
+   "name": "SwitchTrackColorInactive",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "&HFF000000",
+   "name": "TextColor",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "&HFF888888",
+   "name": "TextColorInactive",
+   "editorArgs": [],
+   "editorType": "color"
+  },
+  {
+   "defaultValue": "False",
+   "name": "UseSwitches",
+   "editorArgs": [],
+   "editorType": "boolean"
+  }
+ ],
+ "events": [
+  {
+   "deprecated": "false",
+   "name": "AfterClosing",
+   "description": "SideBar is closed.",
+   "params": [{
+    "name": "ByCommand",
+    "type": "boolean"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "AfterSelecting",
+   "description": "Event for after item selection from the SideBar",
+   "params": [
+    {
+     "name": "ItemNo",
+     "type": "number"
+    },
+    {
+     "name": "Title",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "BeforeOpening",
+   "description": "SideBar is opening.",
+   "params": [{
+    "name": "ByCommand",
+    "type": "boolean"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "Item1Selected",
+   "description": "Item #1 was selected",
+   "params": [{
+    "name": "Title",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "Item2Selected",
+   "description": "Item #2 was selected",
+   "params": [{
+    "name": "Title",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "Item3Selected",
+   "description": "Item #3 was selected",
+   "params": [{
+    "name": "Title",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "Item4Selected",
+   "description": "Item #4 was selected",
+   "params": [{
+    "name": "Title",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "Item5Selected",
+   "description": "Item #5 was selected",
+   "params": [{
+    "name": "Title",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "ItemCheckedChanged",
+   "description": "Chacked state of a SideBar item has changed.",
+   "params": [
+    {
+     "name": "ItemNo",
+     "type": "number"
+    },
+    {
+     "name": "Title",
+     "type": "text"
+    },
+    {
+     "name": "Checked",
+     "type": "boolean"
+    }
+   ]
+  }
+ ]
+}]
